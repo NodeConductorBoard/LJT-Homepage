@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: CV
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,57 +8,47 @@ redirect_from:
 ---
 
 {% include base_path %}
+{% assign cv_publications = site.publications | sort: 'pub_order' %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+- **Ph.D. in Computer Science**, Hong Kong University of Science and Technology (HKUST), 2024–Present.
+  - First-year PhD candidate in the HKUST NLP Group.
+  - Supervisor: Professor Junxian He.
+- **B.Eng.**, Shanghai Jiao Tong University (SJTU), 2020–2024; graduated in June 2024.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Professor Junxian He previously advised Junteng Liu during his undergraduate studies at SJTU.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Research Experience
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **Research Intern, MINIMAX**, February 2025–Present.
+- **Research Intern, Tencent WXG**, June 2024–September 2024; advisor: Zifei Shan.
+- **Research Intern, Shanghai AI Lab**, June 2023–December 2023; advisor: Prof. Yu Cheng.
+- **PhD Researcher, HKUST NLP Group**, 2024–Present; supervisor: Professor Junxian He.
+
+## Publications
+
+<ul>
+{% for post in cv_publications %}
+  {% include archive-single-cv.html %}
+{% endfor %}
+</ul>
+
+## Skills and Research Expertise
+
+- Natural language processing
+- Machine learning
+- LLM reasoning and reinforcement learning
+- Hallucination in Vision-Language Models (VLM)
+- LLM truthfulness and interpretability
+
+## Honors and Awards
+
+- Zhiyuan Honor Scholarship, Shanghai Jiao Tong University.
+
+## Contact Information
+
+- Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
+- GitHub: [https://github.com/Vicent0205](https://github.com/Vicent0205)
+- Google Scholar: [Junteng Liu profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
+- X (Twitter): [@junteng88716710](https://x.com/junteng88716710)
